@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi PHP</title>
+    <link rel="stylesheet" href="style.css"> <!-- Anda bisa menambahkan file CSS jika perlu -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4a90e2;
+        }
+        pre {
+            background-color: #f7f7f7;
+            border-left: 4px solid #4a90e2;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Materi PHP</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengenalan PHP</h2>
+            <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk pengembangan web. PHP dapat digunakan untuk membuat halaman web dinamis dan interaktif.</p>
+            <p>PHP adalah bahasa yang bersifat open-source dan dapat diintegrasikan dengan berbagai database, seperti MySQL.</p>
+        </section>
+
+        <section>
+            <h2>Sintaks Dasar PHP</h2>
+            <p>Script PHP dimulai dengan <code>&lt;?php</code> dan diakhiri dengan <code>?&gt;</code>.</p>
+            <pre>
+&lt;?php
+    echo "Hello, World!";
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Variabel</h2>
+            <p>Variabel dalam PHP diawali dengan tanda dolar (<code>$</code>). Variabel dapat menyimpan berbagai tipe data.</p>
+            <pre>
+&lt;?php
+$nama = "John Doe"; // String
+$umur = 25; // Integer
+$tinggi = 1.75; // Float
+$isStudent = true; // Boolean
+?&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Tipe Data</h2>
+            <p>PHP memiliki beberapa tipe data dasar:</p>
+            <ul>
+                <li><strong>String</strong>: Teks, misalnya "Hello, World!"</li>
+                <li><strong>Integer</strong>: Angka bulat, misalnya 123</li>
+                <li><strong>Float</strong>: Angka desimal, misalnya 3.14</li>
+                <li><strong>Boolean</strong>: Nilai benar atau salah (true/false)</li>
+                <li><strong>Array</strong>: Kumpulan nilai</li>
+                <li><strong>Object</strong>: Instans dari kelas</li>
+                <li><strong>NULL</strong>: Variabel yang tidak memiliki nilai</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Operator</h2>
+            <p>PHP mendukung berbagai operator, antara lain:</p>
+            <ul>
+                <li><strong>Operator Aritmatika</strong>: +, -, *, /, %</li>
+                <li><strong>Operator Penugasan</strong>: =, +=, -=, *=, /=</li>
+                <li><strong>Operator Perbandingan</strong>: ==, ===, !=, !==, >, <, >=, <=</li>
+                <li><strong>Operator Logika</strong>: &&, ||, !</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Struktur Kontrol</h2>
+            <p>PHP memiliki struktur kontrol yang memungkinkan pengendalian alur program:</p>
+            <h3>1. Pernyataan If</h3>
+            <pre>
+&lt;?php
+$nilai = 75;
+if ($nilai >= 75

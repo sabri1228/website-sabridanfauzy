@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML</title>
+    <link rel="stylesheet" href="style.css"> <!-- Anda bisa menambahkan file CSS jika perlu -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4a90e2;
+        }
+        pre {
+            background-color: #f7f7f7;
+            border-left: 4px solid #4a90e2;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Materi HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengenalan HTML</h2>
+            <p>HTML (Hypertext Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML memberikan struktur pada konten web dengan menggunakan elemen-elemen yang disebut tag.</p>
+        </section>
+
+        <section>
+            <h2>Struktur Dasar HTML</h2>
+            <p>Setiap dokumen HTML memiliki struktur dasar sebagai berikut:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Judul Halaman&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Selamat Datang di Halaman HTML&lt;/h1&gt;
+        &lt;p&gt;Ini adalah contoh paragraf.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Elemen Penting dalam HTML</h2>
+            <p>Berikut adalah beberapa elemen penting dalam HTML:</p>
+            <ul>
+                <li><strong>&lt;h1&gt; hingga &lt;h6&gt;</strong>: Tag untuk heading (judul), dengan &lt;h1&gt; sebagai yang paling penting.</li>
+                <li><strong>&lt;p&gt;</strong>: Tag untuk paragraf.</li>
+                <li><strong>&lt;a&gt;</strong>: Tag untuk tautan (anchor).</li>
+                <li><strong>&lt;img&gt;</strong>: Tag untuk menyisipkan gambar.</li>
+                <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong>: Tag untuk membuat daftar tidak terurut (unordered list) dan terurut (ordered list).</li>
+                <li><strong>&lt;div&gt;</strong>: Tag untuk membuat blok konten.</li>
+                <li><strong>&lt;span&gt;</strong>: Tag untuk membuat elemen inline.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Atribut dalam HTML</h2>
+            <p>Atribut memberikan informasi tambahan tentang elemen. Atribut ditulis di dalam tag pembuka. Contoh atribut yang sering digunakan:</p>
+            <ul>
+                <li><strong>href</strong>: Digunakan dalam tag &lt;a&gt; untuk menentukan URL tujuan.</li>
+                <li><strong>src</strong>: Digunakan dalam tag &lt;img&gt; untuk menentukan sumber gambar.</li>
+                <li><strong>alt</strong>: Memberikan teks alternatif untuk gambar.</li>
+                <li><strong>class</strong>: Digunakan untuk mengelompokkan elemen dengan gaya CSS yang sama.</li>
+                <li><strong>id</strong>: Memberikan identifikasi unik pada elemen.</li>
+            </ul>
+            <pre>
+&lt;a href="https://www.example.com"&gt;Kunjungi Example&lt;/a&gt;
+&lt;img

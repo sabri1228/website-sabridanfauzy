@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Materi Pemrograman Web</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" onclick="showSection('home')">Home</a></li>
+                <li><a href="php.html" onclick="showSection('php')">PHP</a></li>
+                <li><a href="javascript.html" onclick="showSection('javascript')">JavaScript</a></li>
+                <li><a href="css.html" onclick="showSection('css')">CSS</a></li>
+                <li><a href="html.html" onclick="showSection('html')">HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="content-section">
+            <h2>Selamat Datang</h2>
+            <p>Ini adalah halaman utama dari materi pemrograman web.</p>
+        </section>
+        
+        <section id="php" class="content-section" style="display:none;">
+            <h2>PHP</h2>
+            <p>PHP adalah bahasa pemrograman server-side yang digunakan untuk pengembangan web. Berikut adalah contoh kode PHP:</p>
+            <pre>
+                &lt;?php <br>
+                echo "Hello, World!"; <br>
+                ?&gt;
+            </pre>
+        </section>
+        
+        <section id="javascript" class="content-section" style="display:none;">
+            <h2>JavaScript</h2>
+            <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif. Berikut adalah contoh kode JavaScript:</p>
+            <pre>
+                console.log("Hello, World!");
+            </pre>
+        </section>
+        
+        <section id="css" class="content-section" style="display:none;">
+            <h2>CSS</h2>
+            <p>CSS digunakan untuk mendesain tampilan halaman web. Berikut adalah contoh kode CSS:</p>
+            <pre>
+                body { <br>
+                    background-color: lightblue; <br>
+                }
+            </pre>
+        </section>
+        
+        <section id="html" class="content-section" style="display:none;">
+            <h2>HTML</h2>
+            <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman web. Berikut adalah contoh kode HTML:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                &lt;head&gt; <br>
+                &lt;title&gt;Judul&lt;/title&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                &lt;h1&gt;Hello World!&lt;/h1&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Materi Pemrograman Web. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

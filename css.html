@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi CSS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Anda bisa menambahkan file CSS jika perlu -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4a90e2;
+        }
+        pre {
+            background-color: #f7f7f7;
+            border-left: 4px solid #4a90e2;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Materi CSS</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengenalan CSS</h2>
+            <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain dan mengatur tampilan halaman web. CSS memungkinkan Anda untuk mengubah warna, ukuran, tata letak, dan banyak aspek lainnya dari elemen HTML.</p>
+        </section>
+
+        <section>
+            <h2>Cara Menghubungkan CSS dengan HTML</h2>
+            <p>CSS dapat dihubungkan dengan HTML melalui tiga cara:</p>
+            <ul>
+                <li><strong>Inline CSS</strong>: Menggunakan atribut <code>style</code> dalam tag HTML.</li>
+                <pre>
+&lt;p style="color: blue;"&gt;Ini adalah paragraf dengan teks berwarna biru.&lt;/p&gt;
+                </pre>
+                <li><strong>Internal CSS</strong>: Menggunakan tag <code>&lt;style&gt;</code> di dalam bagian <code>&lt;head&gt;</code> dokumen HTML.</li>
+                <pre>
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                </pre>
+                <li><strong>External CSS</strong>: Menggunakan file CSS terpisah yang dihubungkan dengan tag <code>&lt;link&gt;</code>.</li>
+                <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+                </pre>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Selektor CSS</h2>
+            <p>Selektor digunakan untuk memilih elemen HTML yang akan diberi gaya. Beberapa jenis selektor yang umum digunakan:</p>
+            <ul>
+                <li><strong>Selektor Elemen</strong>: Memilih semua elemen dengan nama tag tertentu.</li>
+                <pre>
+p {
+    color: green;
+}
+                </pre>
+                <li><strong>Selektor Kelas</strong>: Memilih elemen dengan kelas tertentu, diawali dengan titik (.)</li>
+                <pre>
+.class-name {
+    font-size: 20px;
+}
+                </pre>
+                <li><strong>Selektor ID</strong>: Memilih elemen dengan ID tertentu, diawali dengan tanda pagar (#)</li>
+                <pre>
+#unique-id {
+    background-color: yellow;
+}
+                </pre>
+                <li><strong>Selektor Gabungan</strong>: Memilih elemen berdasarkan kombinasi selektor.</li>
+                <pre>
+div p {
+    margin: 10px;
+}
+                </pre>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Properti CSS</h2>
+            <p>CSS memiliki banyak properti yang dapat digunakan untuk mengatur tampilan elemen. Beberapa properti yang umum digunakan:</p>
+            <ul>
+                <li><strong>Color</strong>: Mengatur warna teks.</li>
+                <li><strong>Background-color</strong>: Mengatur warna latar belakang.</li>
+                <li><strong>Font-size
